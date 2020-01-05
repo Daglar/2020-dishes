@@ -1,0 +1,24 @@
+{% load base_filters %}
+{% get_subscribe_page as subscribe_page %}
+<section class="ftco-subscribe ftco-section bg-light">
+    <div class="overlay">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 text-wrap text-center heading-section ftco-animate">
+                    <h2 class="mb-4"><span>{{subscribe_page.title}}</span></h2>
+                    <p>{{subscribe_page.description}}</p>
+                    <div class="row d-flex justify-content-center mt-4 mb-4">
+                        <div class="col-md-8">
+                            <form action="#" class="subscribe-form">
+                                <div class="form-group d-flex">
+                                    <input type="text" class="form-control" placeholder="Enter email address">
+                                    <input type="submit" value="Subscribe" class="submit px-3">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
